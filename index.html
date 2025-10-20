@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safeer - Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+  <div class="logo">Safeer - Developer</div>
+  <div class="menu-toggle" id="mobile-menu">☰</div>
+  <ul class="nav-list">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./services.html">Services</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="txt">
+  Hi, I’m <span>Safeer Hussain</span>, a <span>Web Developer</span> building sleek, fast, and responsive web experiences.
+  <br>
+  <span id="element"></span>
+  <div class="buttons">
+    <a href="#projects" class="btn small">Explore Service</a>
+    <a href="contact.html" class="btn btn-alt small">Let’s Talk</a>
+  </div>
+</div>
+
+
+        <span id="element"></span>
+      <div class="pic">
+        <img src="coding-28.png" alt="Safeer Hussain">
+      </div>
+    </section>
+    <hr>
+    <section class="Secondsection" id="skills">
+  <span class="gray">Technologies I Work With</span>
+  <div class="past"><h1>Skills & Tools</h1></div>
+
+  <div class="skills-container">
+    <div class="skill-card">
+      <img src="pngwing.com.png" alt="HTML Logo">
+      <h3>HTML5</h3>
+    </div>
+
+    <div class="skill-card">
+      <img src="pngwing.com (1).png" alt="CSS Logo">
+      <h3>CSS3</h3>
+    </div>
+
+    <div class="skill-card">
+      <img src="pngwing.com (2).png" alt="JavaScript Logo">
+      <h3>JavaScript</h3>
+    </div>
+
+    <div class="skill-card">
+      <img src="pngwing.com (3).png" alt="React Logo">
+      <h3>React.js</h3>
+    </div>
+
+    <div class="skill-card">
+      <img src="pngwing.com (7).png" alt="Node.js Logo">
+      <h3>Node.js</h3>
+    </div>
+
+    <div class="skill-card">
+      <img src="pngwing.com (8).png" alt="Express Logo">
+      <h3>Express.js</h3>
+    </div>
+
+    <div class="skill-card">
+      <img src="pngwing.com (5).png" alt="SQL Logo">
+      <h3>PostgreSQL</h3>
+    </div>
+
+    <div class="skill-card">
+      <img src="pngwing.com (6).png" alt="Git Logo">
+      <h3>Git & GitHub</h3>
+    </div>
+  </div>
+</section>
+
+  <section class="projects" id="projects">
+  <span class="gray">We deliver customized solutions to a global clientele, always putting client needs first.</span>
+  <h1 class="project-title">Our results speak for themselves, but our clients say it best.
+</h1>
+
+  <div class="project-container">
+    <div class="project-card">
+      <h2>Scalable architecture delivered</h2>
+      <p>Built with future growth in mind. Modular code, clean structure, and easy to maintain.</p>
+      <div class="gray">Amelia</div>
+    </div>
+
+    <div class="project-card">
+      <h2>Understood our vision</h2>
+      <p>Took our vague ideas and turned them into a fully functional, professional-grade platform.</p>
+      <div class="gray">Elizabeth</div>
+    </div>
+
+    <div class="project-card">
+      <h2>Flawless site execution</h2>
+      <p>Delivered a sleek, responsive website that worked perfectly across all devices. Truly impressed by the attention to detail.</p>
+      <div class="gray">Matthew</div>
+    </div>
+  </div>
+
+    
+</section>
+
+<section class="Getintouch" id="contact">
+  <div class="touch-content">
+    <h2>Let’s Build Something Amazing Together 🚀</h2>
+    <p>
+      Have a project idea or want to collaborate? I’m always open to discussing new opportunities
+      and creative challenges.
+    </p>
+    <div class="buttons">
+      <a href="contact.html" class="btn-primary">Let’s talk</a>
+      <a href="projects.html" class="btn-secondary">View My Work</a>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer>
+  <div class="footer-content">
+    <p>Designed & Developed by <span>Safeer Hussain</span></p>
+    <div class="socials">
+      <a href="https://linkedin.com/in/yourusername" target="_blank"><img src="pngwing.com (9).png" alt="LinkedIn"></a>
+      <a href="mailto:safeer@example.com"><img src="pngwing.com (10).png" alt="Email"></a>
+    </div>
+  </div>
+  <p class="copy">© <span id="year"></span> All Rights Reserved.</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script>AOS.init();</script>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script>
+    var typed = new Typed('#element', {
+      strings: [
+  "Full-Stack Web Developer",
+  "Frontend Developer (HTML, CSS, JS)",
+  "React.js Enthusiast",
+  "Node.js & Express Developer",
+  "JavaScript Enthusiast"
+],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 1000,
+      loop: true
+    });
+
+    
+const mobileMenu = document.getElementById('mobile-menu');
+const navList = document.querySelector('.nav-list');
+
+mobileMenu.addEventListener('click', () => {
+  navList.classList.toggle('active');
+});
+
+
+  </script>
+  
+</body>
+</html>
